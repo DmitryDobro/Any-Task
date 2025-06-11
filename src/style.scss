@@ -1,0 +1,19 @@
+@import './styles/shared/reset.scss';
+@import './styles/shared/variables.scss';
+@import './styles/components/index.scss';
+@import './styles/blocks/index.scss';
+
+body {
+  background-color: $color-white;
+  font-family: $base_font-family;
+}
+
+.container{
+  max-width: 1720px;
+  margin: 0 auto;
+}
+.flex__type_row-beetween{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
