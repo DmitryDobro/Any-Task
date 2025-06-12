@@ -13,7 +13,7 @@
     <title>Vite App</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="header__container container">
         <div class="header__item">
           <div class="header__logo-block">
@@ -47,103 +47,151 @@
       </div>
     </header>
     <main class="main">
-      <aside class="aside">
-        <ul class="Text__Medium">
-          <li>
-            <div class="category">
-              <span>Category</span>
-              <span class="Text__Small">3</span>
-            </div>
-            <ul class="subcategory">
-              <li>Subcategory</li>
-              <li>Subcategory</li>
-              <li>Subcategory</li>
-            </ul>
-          </li>
-          <li>
-            <div class="category">
-              <span>Category</span>
-              <span>3</span>
-            </div>
-            <ul class="subcategory">
-              <li>Subcategory</li>
-              <li>Subcategory</li>
-              <li>Subcategory</li>
-            </ul>
-          </li>
-          <li>
-            <div class="category">
-              <span>Category</span>
-              <span>3</span>
-            </div>
-            <ul class="subcategory">
-              <li>Subcategory</li>
-              <li>Subcategory</li>
-              <li>Subcategory</li>
-            </ul>
-          </li>
-        </ul>
-        <div>
-          <h5 class="Text__Bold">Price</h5>
-          <div class="prise-block">
-            <div class="input__container prise-block__input">
-              <span class="input__placeholder Text__Small">от</span>
-              <input class="input" type="text" />
-            </div>
-            <span></span>
-            <div class="input__container prise-block__input">
-              <span class="input__placeholder Text__Small">до</span>
-              <input class="input" type="text" />
-            </div>
-          </div>
-        </div>
-        <div class="brends-block">
-          <div class="brends-block__title">
-            <h5 class="Text__Bold">Brends</h5>
-            <span class="brends-block__clear-btn Text__Small">Clear</span>
-          </div>
-          <div class="brends-block__input input__container">
-            <input class="input" type="text" />
-          </div>
-          <ul class="brends-block__list">
-            <li class="flex__type_row-beetween">
-              <label class="checkbox__container">
-                <input class="checkbox__checkmark_type_default" type="checkbox" />
-                <span class="checkbox__checkmark_type_custom"></span>
-                Атрибут
-              </label>
-              <span class="Text__Small counter">3</span>
-            </li>
-            <li class="flex__type_row-beetween">
-              <label class="checkbox__container">
-                <input class="checkbox__checkmark_type_default" type="checkbox" />
-                <span class="checkbox__checkmark_type_custom"></span>
-                Атрибут
-              </label>
-              <span class="Text__Small counter">3</span>
-            </li>
-            <li class="flex__type_row-beetween">
-              <label class="checkbox__container">
-                <input class="checkbox__checkmark_type_default" type="checkbox" />
-                <span class="checkbox__checkmark_type_custom"></span>
-                Атрибут
-              </label>
-              <span class="Text__Small counter">3</span>
-            </li>
-            <li class="flex__type_row-beetween">
-              <label class="checkbox__container">
-                <input class="checkbox__checkmark_type_default" type="checkbox" />
-                <span class="checkbox__checkmark_type_custom"></span>
-                Атрибут
-              </label>
-              <span class="Text__Small counter">3</span>
+      <div class="container main__container">
+        <aside class="aside">
+          <ul class=" Text__Medium category__list">
+            <li class="Text__Medium">
+              <div class="category__name">
+                <span> Название категории</span>
+                <span class="Text__Small aside__text-color_type_grey">3</span>
+              </div>
+              <ul class="subcategory__list">
+                <li>
+                  <div class="category__name">
+                    <span> Название категории</span>
+                    <span class="Text__Small aside__text-color_type_grey">3</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="category__name">
+                    <span> Название категории</span>
+                    <span class="Text__Small aside__text-color_type_grey">3</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="category__name">
+                    <span> Название категории</span>
+                    <span class="Text__Small aside__text-color_type_grey">3</span>
+                  </div>
+                </li>
+              </ul>
             </li>
           </ul>
-        </div>
-      </aside>
-      <section class="card-list__wrapper">
-        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, perferendis?</div>
-      </section>
+          <div>
+            <h5 class="Text__Bold prise__title" style="text-align: center;">Цена</h5>
+            <div class="prise-block">
+              <div class="input__container prise-block__input">
+                <span class="input__placeholder Text__Small">от</span>
+                <input class="input" type="text" />
+              </div>
+              <span></span>
+              <div class="input__container prise-block__input">
+                <span class="input__placeholder Text__Small">до</span>
+                <input class="input" type="text" />
+              </div>
+            </div>
+          </div>
+          <div class="brends-block">
+            <div class="brends-block__title">
+              <h5 class="Text__Bold">Бренд</h5>
+              <span class="brends-block__clear-btn Text__Small">Очистить</span>
+            </div>
+            <div class="brends-block__input input__container">
+              <input class="input" type="text" />
+            </div>
+            <ul class="aside-list brends-block__list">
+              <li class="flex__type_row-beetween">
+                <label class="checkbox__container">
+                  <input class="checkbox__checkmark_type_default" type="checkbox" />
+                  <span class="checkbox__checkmark_type_custom"></span>
+                  Атрибут
+                </label>
+                <span class="Text__Small counter">3</span>
+              </li>
+              <li class="flex__type_row-beetween">
+                <label class="checkbox__container">
+                  <input class="checkbox__checkmark_type_default" type="checkbox" />
+                  <span class="checkbox__checkmark_type_custom"></span>
+                  Атрибут
+                </label>
+                <span class="Text__Small counter">3</span>
+              </li>
+              <li class="flex__type_row-beetween">
+                <label class="checkbox__container">
+                  <input class="checkbox__checkmark_type_default" type="checkbox" />
+                  <span class="checkbox__checkmark_type_custom"></span>
+                  Атрибут
+                </label>
+                <span class="Text__Small counter">3</span>
+              </li>
+              <li class="flex__type_row-beetween">
+                <label class="checkbox__container">
+                  <input class="checkbox__checkmark_type_default" type="checkbox" />
+                  <span class="checkbox__checkmark_type_custom"></span>
+                  Атрибут
+                </label>
+                <span class="Text__Small counter">3</span>
+              </li>
+              <li class="flex__type_row-beetween">
+                <label class="checkbox__container">
+                  <input class="checkbox__checkmark_type_default" type="checkbox" />
+                  <span class="checkbox__checkmark_type_custom"></span>
+                  Атрибут
+                </label>
+                <span class="Text__Small counter">3</span>
+              </li>
+              <li class="flex__type_row-beetween">
+                <label class="checkbox__container">
+                  <input class="checkbox__checkmark_type_default" type="checkbox" />
+                  <span class="checkbox__checkmark_type_custom"></span>
+                  Атрибут
+                </label>
+                <span class="Text__Small counter">3</span>
+              </li>
+              <!-- <li class="flex__type_row-beetween">
+                <label class="checkbox__container">
+                  <input class="checkbox__checkmark_type_default" type="checkbox" />
+                  <span class="checkbox__checkmark_type_custom"></span>
+                  Атрибут
+                </label>
+                <span class="Text__Small counter">3</span>
+              </li>
+              <li class="flex__type_row-beetween">
+                <label class="checkbox__container">
+                  <input class="checkbox__checkmark_type_default" type="checkbox" />
+                  <span class="checkbox__checkmark_type_custom"></span>
+                  Атрибут
+                </label>
+                <span class="Text__Small counter">3</span>
+              </li> -->
+            </ul>
+          </div>
+          <div class="size-block">
+            <h5 class="Text__Bold" style="text-align: center;">Размер</h5>
+            <ul class="aside-list size-block__list">
+              <li class="flex__type_row-beetween">
+                <label class="checkbox__container">
+                  <input class="checkbox__checkmark_type_default" type="checkbox" />
+                  <span class="checkbox__checkmark_type_custom"></span>
+                  Атрибут
+                </label>
+                <span class="Text__Small counter">3</span>
+              </li>
+              <li class="flex__type_row-beetween">
+                <label class="checkbox__container">
+                  <input class="checkbox__checkmark_type_default" type="checkbox" />
+                  <span class="checkbox__checkmark_type_custom"></span>
+                  Атрибут
+                </label>
+                <span class="Text__Small counter">3</span>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <section class="card-list__wrapper">
+          <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, perferendis?</div>
+        </section>
+      </div>
     </main>
     <script type="module" src="/src/main.js"></script>
   </body>

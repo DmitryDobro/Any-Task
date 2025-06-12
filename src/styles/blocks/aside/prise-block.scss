@@ -1,0 +1,21 @@
+.prise-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  > span {
+    width: 17px;
+    height: 1px;
+    background-color: $color-border;
+  }
+}
+.prise-block__input {
+  padding: 8px;
+}
+.input__placeholder {
+  color: $color-font-second;
+  margin-right: 6px;
+}
+.prise__title {
+  margin-bottom: 21px;
+}

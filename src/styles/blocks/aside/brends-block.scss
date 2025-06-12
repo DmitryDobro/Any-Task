@@ -1,0 +1,24 @@
+.brends-block__input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 6px 8px;
+  &::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    background: url('/src/assets/search_icon.svg');
+    @media (max-width: 840px) {
+      display: none;
+    }
+  }
+}
+.brends-block__title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 17px;
+}
+.brends-block__clear-btn {
+  color: $color-font-second;
+  text-decoration: underline;
+}
