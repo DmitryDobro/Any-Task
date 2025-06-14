@@ -1,13 +1,24 @@
 import './style.scss';
+import './scripts/clearCheckboxes';
+import './scripts/dropDownList';
 
-let catArr = document.querySelectorAll('.category__name');
+let input = document.getElementById('headerInput');
+let btn = document.querySelector('.header__input-btn');
+let icon = document.getElementById('headerClearIcon');
 
-for (let i = 0; catArr.length > i; i++) {
-  catArr[i].addEventListener('click', evt => {
-    console.log(catArr[i].parentNode.querySelector('.subcategory__list'));
+input.addEventListener('input', evt => {
+  console.log(icon);
 
-    let subCat = catArr[i].parentNode.querySelector('.subcategory__list');
-    subCat.classList.toggle('subcategory_type_active');
-    catArr[i].classList.toggle('category_type_active');
-  });
-}
+  if (input.value) {
+    btn.style.display = 'block';
+    icon.style.display = 'block';
+  } else {
+    btn.style.display = 'none';
+    icon.style.display = 'none';
+  }
+});
+icon.addEventListener('click', () => {
+  input.value = '';
+  btn.style.display = 'none';
+  icon.style.display = 'none';
+});

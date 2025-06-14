@@ -14,9 +14,8 @@
   &:focus-within {
     border: 1px solid $color-brand;
   }
-  &:focus-within .input__clear-icon {
-    display: block;
-  }
+
+  
 }
 .input__clear-icon {
   display: none;

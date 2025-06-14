@@ -5,12 +5,15 @@
 
 
 .aside {
-  flex: 0 0 16.3%;
+  flex: 0 0 280px;
   display: flex;
   flex-direction: column;
   gap: 34px;
   color: $сolor-font-main;
   padding-top: 8px;
+    @media (max-width: 840px) {
+    display: none;
+  }
 }
 
 

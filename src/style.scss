@@ -1,5 +1,6 @@
 @import './styles/shared/reset.scss';
 @import './styles/shared/variables.scss';
+@import './styles/shared/utils.scss';
 @import './styles/components/index.scss';
 @import './styles/blocks/index.scss';
 
@@ -12,9 +13,18 @@ body {
 .container {
   max-width: 1720px;
   margin: 0 auto;
+  padding: 0 100px;
+  @media (max-width: 840px) {
+    padding: 0 18px;
+  }
 }
 .flex__type_row-beetween {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.flex__type_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

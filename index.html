@@ -14,24 +14,27 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__container container">
-        <div class="header__item">
+      <div class="container header__container">
+        <div class="header__item flex__type_center">
           <div class="header__logo-block">
             <img class="header__logo-img" src="/src/assets/logo-header.png" alt="Лого сайта" />
             <span class="header__logo-name">Логотип</span>
           </div>
           <button class="btn header__btn">Каталог</button>
         </div>
-        <div class="header__item header__item_type_input-wrapper">
+        <button class="header__btn">
+          <img src="./src/assets/arrow-left.svg" alt="Иконка стрелки" />
+        </button>
+        <div class="header__item flex__type_center header__item_type_input-wrapper">
           <div class="header__input input__container">
-            <input class="input" type="text" placeholder="Название, симптом, система организма или активное решение" />
-            <svg class="input__clear-icon" viewBox="0 0 24 24" width="24" height="24">
+            <input id="headerInput" class="input" type="text" placeholder="Название, симптом, система организма или активное решение" />
+            <svg id="headerClearIcon" class="input__clear-icon" viewBox="0 0 24 24" width="35" height="35">
               <use href="/src/assets/sprite.svg#icon-clear"></use>
             </svg>
-            <button class="btn header__input-btn">Find</button>
+            <button class="btn btn_type_primary header__input-btn">Найти</button>
           </div>
         </div>
-        <div class="header__item">
+        <div class="header__item flex__type_center">
           <ul class="header__links">
             <li>
               <a class="Text__Medium" href="#">Информация о компании</a>
@@ -50,13 +53,13 @@
       <div class="container main__container">
         <!-- ------------------------------------- -->
         <aside class="aside">
-          <ul class="Text__Medium category__list">
+          <ul class="Text__Medium category__list category_type_active">
             <li class="Text__Medium">
               <div class="category__name">
                 <span> Название категории</span>
                 <span class="Text__Small aside__text-color_type_grey">3</span>
               </div>
-              <ul class="subcategory__list">
+              <ul class="subcategory__list subcategory_type_active">
                 <li>
                   <div class="category__name">
                     <span> Название категории</span>
@@ -95,15 +98,15 @@
           <div class="brends-block">
             <div class="brends-block__title">
               <h5 class="Text__Bold">Бренд</h5>
-              <span class="brends-block__clear-btn Text__Small">Очистить</span>
+              <span id="clearBtn" class="brends-block__clear-btn Text__Small">Очистить</span>
             </div>
             <div class="brends-block__input input__container">
-              <input class="input" type="text" />
+              <input id="brendsBlockInput" class="input" type="text" />
             </div>
             <ul class="aside-list brends-block__list">
               <li class="flex__type_row-beetween">
                 <label class="checkbox__container">
-                  <input class="checkbox__checkmark_type_default" type="checkbox" />
+                  <input value="valueName" class="checkbox__checkmark_type_default checkbox_brends-block" type="checkbox" />
                   <span class="checkbox__checkmark_type_custom"></span>
                   Атрибут
                 </label>
@@ -111,7 +114,7 @@
               </li>
               <li class="flex__type_row-beetween">
                 <label class="checkbox__container">
-                  <input class="checkbox__checkmark_type_default" type="checkbox" />
+                  <input value="valueName" class="checkbox__checkmark_type_default checkbox_brends-block" type="checkbox" />
                   <span class="checkbox__checkmark_type_custom"></span>
                   Атрибут
                 </label>
@@ -119,7 +122,7 @@
               </li>
               <li class="flex__type_row-beetween">
                 <label class="checkbox__container">
-                  <input class="checkbox__checkmark_type_default" type="checkbox" />
+                  <input class="checkbox__checkmark_type_default checkbox_brends-block" type="checkbox" />
                   <span class="checkbox__checkmark_type_custom"></span>
                   Атрибут
                 </label>
@@ -127,7 +130,7 @@
               </li>
               <li class="flex__type_row-beetween">
                 <label class="checkbox__container">
-                  <input class="checkbox__checkmark_type_default" type="checkbox" />
+                  <input value="valueName" class="checkbox__checkmark_type_default checkbox_brends-block" type="checkbox" />
                   <span class="checkbox__checkmark_type_custom"></span>
                   Атрибут
                 </label>
@@ -135,7 +138,7 @@
               </li>
               <li class="flex__type_row-beetween">
                 <label class="checkbox__container">
-                  <input class="checkbox__checkmark_type_default" type="checkbox" />
+                  <input value="valueName" class="checkbox__checkmark_type_default checkbox_brends-block" type="checkbox" />
                   <span class="checkbox__checkmark_type_custom"></span>
                   Атрибут
                 </label>
@@ -143,28 +146,12 @@
               </li>
               <li class="flex__type_row-beetween">
                 <label class="checkbox__container">
-                  <input class="checkbox__checkmark_type_default" type="checkbox" />
+                  <input value="valueName" class="checkbox__checkmark_type_default checkbox_brends-block" type="checkbox" />
                   <span class="checkbox__checkmark_type_custom"></span>
                   Атрибут
                 </label>
                 <span class="Text__Small counter">3</span>
               </li>
-              <!-- <li class="flex__type_row-beetween">
-                <label class="checkbox__container">
-                  <input class="checkbox__checkmark_type_default" type="checkbox" />
-                  <span class="checkbox__checkmark_type_custom"></span>
-                  Атрибут
-                </label>
-                <span class="Text__Small counter">3</span>
-              </li>
-              <li class="flex__type_row-beetween">
-                <label class="checkbox__container">
-                  <input class="checkbox__checkmark_type_default" type="checkbox" />
-                  <span class="checkbox__checkmark_type_custom"></span>
-                  Атрибут
-                </label>
-                <span class="Text__Small counter">3</span>
-              </li> -->
             </ul>
           </div>
           <div class="size-block">
@@ -191,6 +178,7 @@
         </aside>
         <!-- ---------------------------------------------- -->
         <section class="cards">
+          <h2 class="cards__title">Название категории</h2>
           <div class="cards__list">
             <div class="card">
               <div class="card__img-block">
@@ -292,6 +280,157 @@
                 <button class="btn btn_type_primary Btn__Text card__btn">Купить</button>
               </div>
             </div>
+            <div class="card">
+              <div class="card__img-block">
+                <div class="card__badge">
+                  <span class="Text__Medium card__badge-title">Хит продаж</span>
+                  <img class="card__badge-icon" src="./src/assets/badge-icon.svg" alt="Иконка огня" />
+                </div>
+                <div class="card__img-products">
+                  <img src="./src/assets/card img md.png" alt="Фото товара" />
+                </div>
+
+                <div class="card__sale">25%</div>
+              </div>
+              <div class="card__info-block">
+                <p class="Text__Medium card__name-brand">Бренд</p>
+                <p class="Text__Medium card__name-product">
+                  Полное название товара в несколько строк для вида с обрывом в конце Полное название товара в несколько строк для вида с
+                  обрывом в конце
+                </p>
+                <p class="card__prices">
+                  <span class="Text__Bold card__price_type_sale-price">5 990 ₽</span>
+                  <span class="Text__Medium card__price_type_base-price">5 990 ₽</span>
+                </p>
+                <button class="btn btn_type_primary Btn__Text card__btn">Купить</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img-block">
+                <div class="card__badge">
+                  <span class="Text__Medium card__badge-title">Хит продаж</span>
+                  <img class="card__badge-icon" src="./src/assets/badge-icon.svg" alt="Иконка огня" />
+                </div>
+                <div class="card__img-products">
+                  <img src="./src/assets/card img md.png" alt="Фото товара" />
+                </div>
+
+                <div class="card__sale">25%</div>
+              </div>
+              <div class="card__info-block">
+                <p class="Text__Medium card__name-brand">Бренд</p>
+                <p class="Text__Medium card__name-product">
+                  Полное название товара в несколько строк для вида с обрывом в конце Полное название товара в несколько строк для вида с
+                  обрывом в конце
+                </p>
+                <p class="card__prices">
+                  <span class="Text__Bold card__price_type_sale-price">5 990 ₽</span>
+                  <span class="Text__Medium card__price_type_base-price">5 990 ₽</span>
+                </p>
+                <button class="btn btn_type_primary Btn__Text card__btn">Купить</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img-block">
+                <div class="card__badge">
+                  <span class="Text__Medium card__badge-title">Хит продаж</span>
+                  <img class="card__badge-icon" src="./src/assets/badge-icon.svg" alt="Иконка огня" />
+                </div>
+                <div class="card__img-products">
+                  <img src="./src/assets/card img md.png" alt="Фото товара" />
+                </div>
+
+                <div class="card__sale">25%</div>
+              </div>
+              <div class="card__info-block">
+                <p class="Text__Medium card__name-brand">Бренд</p>
+                <p class="Text__Medium card__name-product">
+                  Полное название товара в несколько строк для вида с обрывом в конце Полное название товара в несколько строк для вида с
+                  обрывом в конце
+                </p>
+                <p class="card__prices">
+                  <span class="Text__Bold card__price_type_sale-price">5 990 ₽</span>
+                  <span class="Text__Medium card__price_type_base-price">5 990 ₽</span>
+                </p>
+                <button class="btn btn_type_primary Btn__Text card__btn">Купить</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img-block">
+                <div class="card__badge">
+                  <span class="Text__Medium card__badge-title">Хит продаж</span>
+                  <img class="card__badge-icon" src="./src/assets/badge-icon.svg" alt="Иконка огня" />
+                </div>
+                <div class="card__img-products">
+                  <img src="./src/assets/card img md.png" alt="Фото товара" />
+                </div>
+
+                <div class="card__sale">25%</div>
+              </div>
+              <div class="card__info-block">
+                <p class="Text__Medium card__name-brand">Бренд</p>
+                <p class="Text__Medium card__name-product">
+                  Полное название товара в несколько строк для вида с обрывом в конце Полное название товара в несколько строк для вида с
+                  обрывом в конце
+                </p>
+                <p class="card__prices">
+                  <span class="Text__Bold card__price_type_sale-price">5 990 ₽</span>
+                  <span class="Text__Medium card__price_type_base-price">5 990 ₽</span>
+                </p>
+                <button class="btn btn_type_primary Btn__Text card__btn">Купить</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img-block">
+                <div class="card__badge">
+                  <span class="Text__Medium card__badge-title">Хит продаж</span>
+                  <img class="card__badge-icon" src="./src/assets/badge-icon.svg" alt="Иконка огня" />
+                </div>
+                <div class="card__img-products">
+                  <img src="./src/assets/card img md.png" alt="Фото товара" />
+                </div>
+
+                <div class="card__sale">25%</div>
+              </div>
+              <div class="card__info-block">
+                <p class="Text__Medium card__name-brand">Бренд</p>
+                <p class="Text__Medium card__name-product">
+                  Полное название товара в несколько строк для вида с обрывом в конце Полное название товара в несколько строк для вида с
+                  обрывом в конце
+                </p>
+                <p class="card__prices">
+                  <span class="Text__Bold card__price_type_sale-price">5 990 ₽</span>
+                  <span class="Text__Medium card__price_type_base-price">5 990 ₽</span>
+                </p>
+                <button class="btn btn_type_primary Btn__Text card__btn">Купить</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img-block">
+                <div class="card__badge">
+                  <span class="Text__Medium card__badge-title">Хит продаж</span>
+                  <img class="card__badge-icon" src="./src/assets/badge-icon.svg" alt="Иконка огня" />
+                </div>
+                <div class="card__img-products">
+                  <img src="./src/assets/card img md.png" alt="Фото товара" />
+                </div>
+
+                <div class="card__sale">25%</div>
+              </div>
+              <div class="card__info-block">
+                <p class="Text__Medium card__name-brand">Бренд</p>
+                <p class="Text__Medium card__name-product">
+                  Полное название товара в несколько строк для вида с обрывом в конце Полное название товара в несколько строк для вида с
+                  обрывом в конце
+                </p>
+                <p class="card__prices">
+                  <span class="Text__Bold card__price_type_sale-price">5 990 ₽</span>
+                  <span class="Text__Medium card__price_type_base-price">5 990 ₽</span>
+                </p>
+                <button class="btn btn_type_primary Btn__Text card__btn">Купить</button>
+              </div>
+            </div>
+        
           </div>
           <div></div>
         </section>

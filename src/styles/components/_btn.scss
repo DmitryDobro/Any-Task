@@ -2,14 +2,15 @@
   border-radius: 4px;
   background: none;
   border: 1px solid $color-brand;
-  &:hover {
-    background: $color-brand;
-    color: $color-white;
-    border: 1px solid currentColor;
-  }
+
   &_type_primary {
     border: 1px solid $color-brand;
     color: $color-brand;
+    &:hover {
+      background: $color-brand;
+      color: $color-white;
+      border: 1px solid currentColor;
+    }
   }
   &_type_disabled {
     border: 1px solid $color-font-second;
