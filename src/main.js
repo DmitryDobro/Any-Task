@@ -1,33 +1,14 @@
 import './style.scss';
 
-function addSymbol(arr) { // функция для преобразования артикула в нужный нам вид с нулем в начале и с тире через каждые 3 числа
-  return arr.map(item => {
-    let result = '';
-    item = '0' + item;
-    for (let i = 0; i < item.length; i++) {
-      if (i % 3 == 0 && i !== 0) {
-        result += '-' + item[i];
-      } else {
-        result += item[i];
-      }
-    }
-    return result;
-  });
-}
-
-function getАrticle(selectorName, needTransform) {
+function getАrticle(selectorName) {
   const arr = document.querySelectorAll(selectorName);
   let arrAtr = [];
   arr.forEach(item => {
     arrAtr.push(item.getAttribute('data-product-mini-card'));
   });
-  if (needTransform) { 
-    return addSymbol(arrAtr);
-  } else {
-    return arrAtr;
-  }
+  return arrAtr;
 }
-let articles = getАrticle('._product', true);
+let articles = getАrticle('._product');
 console.log(articles);
 
 // ==============
