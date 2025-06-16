@@ -4,13 +4,12 @@
   padding: 6px 8px;
 }
 .brends-block__title {
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 17px;
 }
 .brends-block__clear-btn {
   color: $color-font-second;
   text-decoration: underline;
+  cursor: pointer;
   &:hover {
     color: $сolor-font-main;
   }

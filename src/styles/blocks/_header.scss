@@ -1,15 +1,16 @@
 .header {
   margin-bottom: 20px;
-  @media (max-width: 840px) {
+  @media (max-width: $md_breakpoint) {
     padding-top: 42px;
-    margin-bottom: 11px;
+    margin-bottom: 0;
   }
 }
 .header__container {
   @include flex;
   padding: 8px 0 12px 25px;
   gap: 24px;
-  @media (max-width: 840px) {
+  @media (max-width: $md_breakpoint) {
+    padding: 0px 13px 12px;
     justify-content: center;
     gap: 0;
     > div {
@@ -24,7 +25,7 @@
 .header__item_type_input-wrapper {
   flex: 1 1 auto;
   max-width: 1015px;
-  @media (max-width: 1440px) {
+  @media (max-width: $lg_breakpoint) {
     max-width: 479px;
   }
 }
@@ -32,9 +33,6 @@
   @include flex;
   gap: 8px;
   margin-right: 31px;
-  @media (max-width: 840px) {
-    display: none;
-  }
 }
 .header__logo-img {
   width: 23px;
@@ -55,17 +53,25 @@
   border-radius: 8px;
 }
 .header__input {
-  border-radius: 10px;
   width: 100%;
   min-height: 56px;
+  border-radius: 10px;
+
+  padding: 9px 16px;
+  gap: 10px;
+
   color: rgb(51, 51, 51);
-  font-family: "Inter";
+  font-family: 'Inter';
   font-size: 16px;
   font-weight: 400;
   line-height: 14px;
-  padding: 9px 16px;
-  gap: 10px;
-  @media (max-width: 840px) {
+
+  input {
+    &::placeholder {
+      color: #757575;
+    }
+  }
+  @media (max-width: $md_breakpoint) {
     border: none;
     border-bottom: 1px solid #d6c7c7;
     display: flex;
@@ -82,28 +88,19 @@
   display: none;
   padding: 9px 18px;
 }
-.input__container {
-  input {
-    &::placeholder {
-      color: #757575;
-      // font-family: 'Roboto';
-      font-size: 16px;
-      font-weight: 400;
-    }
-  }
-}
 
 .header__links {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+
   line-height: 17px;
   font-family: 'Inter';
 }
 .header__arrow-btn {
   display: none;
   padding: 0;
-  @media (max-width: 840px) {
+  @media (max-width: $md_breakpoint) {
     display: block;
   }
 }

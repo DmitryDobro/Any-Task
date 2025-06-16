@@ -53,55 +53,58 @@
       <div class="container main__container">
         <!-- ------------------------------------- -->
         <aside class="aside">
-          <ul class="Text__Medium category__list category_type_active">
-            <li class="Text__Medium">
-              <div class="category__name">
-                <span> Название категории</span>
-                <span class="Text__Small aside__text-color_type_grey">3</span>
-              </div>
-              <ul class="subcategory__list subcategory_type_active">
-                <li>
-                  <div class="category__name">
-                    <span> Название категории</span>
-                    <span class="Text__Small aside__text-color_type_grey">3</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="category__name">
-                    <span> Название категории</span>
-                    <span class="Text__Small aside__text-color_type_grey">3</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="category__name">
-                    <span> Название категории</span>
-                    <span class="Text__Small aside__text-color_type_grey">3</span>
-                  </div>
-                </li>
-              </ul>
-            </li>
-          </ul>
+          <div class="category-block">
+            <ul class="Text__Medium category__list category_type_active">
+              <li class="Text__Medium">
+                <div class="category__name">
+                  <span> Название категории</span>
+                  <span class="Text__Small Text__Color_Type_Grey">3</span>
+                </div>
+                <ul class="subcategory__list subcategory_type_active">
+                  <li>
+                    <div class="category__name">
+                      <span> Название категории</span>
+                      <span class="Text__Small Text__Color_Type_Grey">3</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="category__name">
+                      <span> Название категории</span>
+                      <span class="Text__Small Text__Color_Type_Grey">3</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="category__name">
+                      <span> Название категории</span>
+                      <span class="Text__Small Text__Color_Type_Grey">3</span>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
           <div>
             <h5 class="Text__Bold prise__title" style="text-align: center">Цена</h5>
-            <div class="prise-block">
+            <div class="prise-block flex__type_row-beetween">
               <div class="input__container prise-block__input">
-                <span class="input__placeholder Text__Small">от</span>
+                <span class="prise-block__custom-placeholder Text__Small">от</span>
                 <input class="input" type="text" />
               </div>
               <span></span>
               <div class="input__container prise-block__input">
-                <span class="input__placeholder Text__Small">до</span>
+                <span class="prise-block__custom-placeholder Text__Small">до</span>
                 <input class="input" type="text" />
               </div>
             </div>
           </div>
           <div class="brends-block">
-            <div class="brends-block__title">
+            <div class="brends-block__title flex__type_row-beetween">
               <h5 class="Text__Bold">Бренд</h5>
               <span id="clearBtn" class="brends-block__clear-btn Text__Small">Очистить</span>
             </div>
             <div class="input__container input__container_type_searchIcon brends-block__input">
-              <input id="brendsBlockInput" class="input" type="text" />
+              <input id="brendsBlockInput" class="input" type="text" placeholder="Поиск" />
             </div>
             <ul class="aside-list brends-block__list">
               <li class="flex__type_row-beetween">
@@ -110,7 +113,7 @@
                   <span class="checkbox__checkmark_type_custom"></span>
                   Атрибут
                 </label>
-                <span class="Text__Small counter">3</span>
+                <span class="Text__Small Text__Color_Type_Grey">3</span>
               </li>
               <li class="flex__type_row-beetween">
                 <label class="checkbox__container">
@@ -118,7 +121,7 @@
                   <span class="checkbox__checkmark_type_custom"></span>
                   Атрибут
                 </label>
-                <span class="Text__Small counter">3</span>
+                <span class="Text__Small Text__Color_Type_Grey">3</span>
               </li>
               <li class="flex__type_row-beetween">
                 <label class="checkbox__container">
@@ -126,7 +129,7 @@
                   <span class="checkbox__checkmark_type_custom"></span>
                   Атрибут
                 </label>
-                <span class="Text__Small counter">3</span>
+                <span class="Text__Small Text__Color_Type_Grey">3</span>
               </li>
               <li class="flex__type_row-beetween">
                 <label class="checkbox__container">
@@ -134,7 +137,7 @@
                   <span class="checkbox__checkmark_type_custom"></span>
                   Атрибут
                 </label>
-                <span class="Text__Small counter">3</span>
+                <span class="Text__Small Text__Color_Type_Grey">3</span>
               </li>
               <li class="flex__type_row-beetween">
                 <label class="checkbox__container">
@@ -142,7 +145,7 @@
                   <span class="checkbox__checkmark_type_custom"></span>
                   Атрибут
                 </label>
-                <span class="Text__Small counter">3</span>
+                <span class="Text__Small Text__Color_Type_Grey">3</span>
               </li>
               <li class="flex__type_row-beetween">
                 <label class="checkbox__container">
@@ -150,12 +153,12 @@
                   <span class="checkbox__checkmark_type_custom"></span>
                   Атрибут
                 </label>
-                <span class="Text__Small counter">3</span>
+                <span class="Text__Small Text__Color_Type_Grey">3</span>
               </li>
             </ul>
           </div>
           <div class="size-block">
-            <h5 class="Text__Bold" style="text-align: center">Размер</h5>
+            <h5 class="Text__Bold">Размер</h5>
             <ul class="aside-list size-block__list">
               <li class="flex__type_row-beetween">
                 <label class="checkbox__container">
@@ -163,7 +166,7 @@
                   <span class="checkbox__checkmark_type_custom"></span>
                   Атрибут
                 </label>
-                <span class="Text__Small counter">3</span>
+                <span class="Text__Small Text__Color_Type_Grey">3</span>
               </li>
               <li class="flex__type_row-beetween">
                 <label class="checkbox__container">
@@ -171,7 +174,23 @@
                   <span class="checkbox__checkmark_type_custom"></span>
                   Атрибут
                 </label>
-                <span class="Text__Small counter">3</span>
+                <span class="Text__Small Text__Color_Type_Grey">3</span>
+              </li>
+              <li class="flex__type_row-beetween">
+                <label class="checkbox__container">
+                  <input class="checkbox__checkmark_type_default" type="checkbox" />
+                  <span class="checkbox__checkmark_type_custom"></span>
+                  Атрибут
+                </label>
+                <span class="Text__Small Text__Color_Type_Grey">3</span>
+              </li>
+              <li class="flex__type_row-beetween">
+                <label class="checkbox__container">
+                  <input class="checkbox__checkmark_type_default" type="checkbox" />
+                  <span class="checkbox__checkmark_type_custom"></span>
+                  Атрибут
+                </label>
+                <span class="Text__Small Text__Color_Type_Grey">3</span>
               </li>
             </ul>
           </div>
@@ -253,6 +272,56 @@
                   <span class="Text__Medium card__price_type_base-price">5 990 ₽</span>
                 </p>
                 <button class="btn btn_type_disabled Btn__Text card__btn">Сообщить о поступлении</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img-block">
+                <div class="card__badge">
+                  <span class="Text__Medium card__badge-title">Хит продаж</span>
+                  <img class="card__badge-icon" src="./src/assets/badge-icon.svg" alt="Иконка огня" />
+                </div>
+                <div class="card__img-products">
+                  <img src="./src/assets/card img md.png" alt="Фото товара" />
+                </div>
+
+                <div class="card__sale">25%</div>
+              </div>
+              <div class="card__info-block">
+                <p class="Text__Medium card__name-brand">Бренд</p>
+                <p class="Text__Medium card__name-product">
+                  Полное название товара в несколько строк для вида с обрывом в конце Полное название товара в несколько строк для вида с
+                  обрывом в конце
+                </p>
+                <p class="card__prices">
+                  <span class="Text__Bold card__price_type_sale-price">5 990 ₽</span>
+                  <span class="Text__Medium card__price_type_base-price">5 990 ₽</span>
+                </p>
+                <button class="btn btn_type_primary Btn__Text card__btn">Купить</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img-block">
+                <div class="card__badge">
+                  <span class="Text__Medium card__badge-title">Хит продаж</span>
+                  <img class="card__badge-icon" src="./src/assets/badge-icon.svg" alt="Иконка огня" />
+                </div>
+                <div class="card__img-products">
+                  <img src="./src/assets/card img md.png" alt="Фото товара" />
+                </div>
+
+                <div class="card__sale">25%</div>
+              </div>
+              <div class="card__info-block">
+                <p class="Text__Medium card__name-brand">Бренд</p>
+                <p class="Text__Medium card__name-product">
+                  Полное название товара в несколько строк для вида с обрывом в конце Полное название товара в несколько строк для вида с
+                  обрывом в конце
+                </p>
+                <p class="card__prices">
+                  <span class="Text__Bold card__price_type_sale-price">5 990 ₽</span>
+                  <span class="Text__Medium card__price_type_base-price">5 990 ₽</span>
+                </p>
+                <button class="btn btn_type_primary Btn__Text card__btn">Купить</button>
               </div>
             </div>
             <div class="card">

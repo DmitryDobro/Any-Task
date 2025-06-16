@@ -10,21 +10,4 @@ body {
   color: $сolor-font-main;
 }
 
-.container {
-  max-width: 1720px;
-  margin: 0 auto;
-  // padding: 0 100px;
-  @media (max-width: 840px) {
-    padding: 0 18px;
-  }
-}
-.flex__type_row-beetween {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.flex__type_center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+

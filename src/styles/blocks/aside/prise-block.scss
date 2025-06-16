@@ -1,5 +1,4 @@
 .prise-block {
-  @include flex(space-between);
   gap: 16px;
   > span {
     width: 17px;
@@ -10,7 +9,7 @@
 .prise-block__input {
   padding: 8px;
 }
-.input__placeholder {
+.prise-block__custom-placeholder {
   color: $color-font-second;
   margin-right: 6px;
 }
