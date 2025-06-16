@@ -13,8 +13,9 @@
     <title>Vite App</title>
   </head>
   <body>
+    <h2 style="text-align: center">Блок для функции получения артикула</h2>
     <div class="cards__list">
-      <div class="card" data-product-id="19714442">
+      <div class="_product" data-product-mini-card="19714442">
         <div class="card__img-block">
           <div class="card__img-products">
             <img src="./src/assets/card img md.png" alt="Фото товара" />
@@ -28,7 +29,35 @@
           </p>
         </div>
       </div>
-      <div class="card" data-product-id="222">
+      <div class="_product" data-product-mini-card="34514578">
+        <div class="card__img-block">
+          <div class="card__img-products">
+            <img src="./src/assets/card img md.png" alt="Фото товара" />
+          </div>
+        </div>
+        <div class="card__info-block">
+          <p class="Text__Medium card__name-brand">Бренд</p>
+          <p class="Text__Medium card__name-product">
+            Полное название товара в несколько строк для вида с обрывом в конце Полное название товара в несколько строк для вида с обрывом
+            в конце
+          </p>
+        </div>
+      </div>
+      <div class="_product" data-product-mini-card="75674972">
+        <div class="card__img-block">
+          <div class="card__img-products">
+            <img src="./src/assets/card img md.png" alt="Фото товара" />
+          </div>
+        </div>
+        <div class="card__info-block">
+          <p class="Text__Medium card__name-brand">Бренд</p>
+          <p class="Text__Medium card__name-product">
+            Полное название товара в несколько строк для вида с обрывом в конце Полное название товара в несколько строк для вида с обрывом
+            в конце
+          </p>
+        </div>
+      </div>
+      <div class="_product" data-product-mini-card="47214108">
         <div class="card__img-block">
           <div class="card__img-products">
             <img src="./src/assets/card img md.png" alt="Фото товара" />
@@ -43,59 +72,61 @@
         </div>
       </div>
     </div>
+    <h2 style="text-align: center">Блок для функции получения характеристик товара</h2>
     <ul>
-      <li class="li">
+      <li class="tab-pane-product-parameter-item">
         <div class="parameter-name">Тип</div>
         <div class="parameter-value">смеситель</div>
       </li>
-      <li class="li">
+      <li class="tab-pane-product-parameter-item">
         <div class="parameter-name">Назначение</div>
         <div class="parameter-value">для раковины</div>
       </li>
-    </ul>
-    <li class="li">
-      <div class="parameter-name">тип</div>
-      <div class="parameter-value">Сталь</div>
-    </li>
-    <li class="li">
-      <div class="parameter-name">
-        Управление
-        <div class="t-w" style="display: inline-block">
-          <span class="js-t-t excl nir-info"></span>
-          <div class="t-c js-t-c">
-            <!--noindex-->
-            <span>Управление</span>
-            <i class="nir-cross"></i>
-            <div class="scroll-block">
-              <p></p>
-              <p style="text-align: left">
-                <b>Рычажное управление</b> - просто и очень удобно. Один поворот ручки отвечает за напор и температуру воды.&nbsp;
-              </p>
-              <p style="text-align: left">
-                <b>Термостат </b>- устройство, в конструкцию которого входит капсула с воском. Позволяет поддерживать заданную температуру и
-                напор воды.
-              </p>
-              <p style="text-align: left">
-                <b>Сенсорное </b>управление реагирует на движение, позволяя бесконтактно управлять водой. Такого типа смесители дольше
-                остаются чистыми. При этом напор и температура отстраиваются заранее. Хотя некоторые самые современные устройства обладают
-                еще более чувствительным сенсором и меняют температуру воды «по мановению рук».&nbsp;
-              </p>
-              <p style="text-align: left">
-                <b>Вентильное </b>управление - традиция и классика, простота использования и возможность тонкой температурной настройки. Из
-                недостатков - необходимость задействовать обе руки и недолговечность запорной прокладки.&nbsp;
-              </p>
-              <p style="text-align: left">
-                <b>Порционные </b>(нажимные) смесители используются в детских учреждениях и общественных местах. Подача воды прекращается
-                через несколько секунд после нажатия. Позволяет беречь воду.<br />
-              </p>
-              <p></p>
+      <li class="tab-pane-product-parameter-item">
+        <div class="parameter-name">тип</div>
+        <div class="parameter-value">Сталь</div>
+      </li>
+      <li class="tab-pane-product-parameter-item">
+        <div class="parameter-name">
+          Управление
+          <div style="display: none" class="t-w" style="display: inline-block">
+            <span class="js-t-t excl nir-info"></span>
+            <div class="t-c js-t-c">
+              <!--noindex-->
+              <span>Управление</span>
+              <i class="nir-cross"></i>
+              <div class="scroll-block">
+                <p></p>
+                <p style="text-align: left">
+                  <b>Рычажное управление</b> - просто и очень удобно. Один поворот ручки отвечает за напор и температуру воды.&nbsp;
+                </p>
+                <p style="text-align: left">
+                  <b>Термостат </b>- устройство, в конструкцию которого входит капсула с воском. Позволяет поддерживать заданную температуру
+                  и напор воды.
+                </p>
+                <p style="text-align: left">
+                  <b>Сенсорное </b>управление реагирует на движение, позволяя бесконтактно управлять водой. Такого типа смесители дольше
+                  остаются чистыми. При этом напор и температура отстраиваются заранее. Хотя некоторые самые современные устройства обладают
+                  еще более чувствительным сенсором и меняют температуру воды «по мановению рук».&nbsp;
+                </p>
+                <p style="text-align: left">
+                  <b>Вентильное </b>управление - традиция и классика, простота использования и возможность тонкой температурной настройки.
+                  Из недостатков - необходимость задействовать обе руки и недолговечность запорной прокладки.&nbsp;
+                </p>
+                <p style="text-align: left">
+                  <b>Порционные </b>(нажимные) смесители используются в детских учреждениях и общественных местах. Подача воды прекращается
+                  через несколько секунд после нажатия. Позволяет беречь воду.<br />
+                </p>
+                <p></p>
+              </div>
+              <!--/noindex-->
             </div>
-            <!--/noindex-->
           </div>
         </div>
-      </div>
-      <div class="parameter-value">рычажное</div>
-    </li>
+        <div class="parameter-value">рычажное</div>
+      </li>
+    </ul>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
