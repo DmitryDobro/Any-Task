@@ -22,11 +22,11 @@
           </div>
           <button class="btn header__btn">Каталог</button>
         </div>
-        <button class="header__btn">
+        <button class="header__arrow-btn">
           <img src="./src/assets/arrow-left.svg" alt="Иконка стрелки" />
         </button>
         <div class="header__item flex__type_center header__item_type_input-wrapper">
-          <div class="header__input input__container">
+          <div class="input__container input__container_type_searchIcon header__input">
             <input id="headerInput" class="input" type="text" placeholder="Название, симптом, система организма или активное решение" />
             <svg id="headerClearIcon" class="input__clear-icon" viewBox="0 0 24 24" width="35" height="35">
               <use href="/src/assets/sprite.svg#icon-clear"></use>
@@ -100,7 +100,7 @@
               <h5 class="Text__Bold">Бренд</h5>
               <span id="clearBtn" class="brends-block__clear-btn Text__Small">Очистить</span>
             </div>
-            <div class="brends-block__input input__container">
+            <div class="input__container input__container_type_searchIcon brends-block__input">
               <input id="brendsBlockInput" class="input" type="text" />
             </div>
             <ul class="aside-list brends-block__list">
@@ -230,13 +230,13 @@
                 <button class="btn btn_type_primary Btn__Text card__btn">Купить</button>
               </div>
             </div>
-            <div class="card">
+            <div class="card card_type_disabled">
               <div class="card__img-block">
                 <div class="card__badge">
                   <span class="Text__Medium card__badge-title">Хит продаж</span>
                   <img class="card__badge-icon" src="./src/assets/badge-icon.svg" alt="Иконка огня" />
                 </div>
-                <div class="card__img-products card__img-products_type_disabled">
+                <div class="card__img-products">
                   <img src="./src/assets/card img md.png" alt="Фото товара" />
                 </div>
 
@@ -430,7 +430,6 @@
                 <button class="btn btn_type_primary Btn__Text card__btn">Купить</button>
               </div>
             </div>
-        
           </div>
           <div></div>
         </section>

@@ -1,23 +1,7 @@
-.brends-block input:checked {
-  background-color: red;
-  .brends-block__clear-btn {
-    display: none;
-  }
-}
 .brends-block__input {
   width: 100%;
   margin-bottom: 15px;
   padding: 6px 8px;
-  &::before {
-    content: '';
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
-    background: url('/src/assets/search_icon.svg');
-    @media (max-width: 840px) {
-      display: none;
-    }
-  }
 }
 .brends-block__title {
   display: flex;
@@ -27,4 +11,7 @@
 .brends-block__clear-btn {
   color: $color-font-second;
   text-decoration: underline;
+  &:hover {
+    color: $сolor-font-main;
+  }
 }

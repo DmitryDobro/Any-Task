@@ -13,6 +13,7 @@
     }
   }
   &_type_disabled {
+    cursor: default;
     border: 1px solid $color-font-second;
     color: $color-font-second;
   }
